@@ -2,7 +2,7 @@ const qBank = [
     {
         id: 1,
         image: null,
-        question: "What do Rolls-Royce and BMW have in common?",
+        question: "What do Rolls-Royce and MINI Coop have in common?",
         options: ["Both are owned by BMW", "Both are luxury brands", "Both are Japanese", "They have nothing in common"],
         answer: "Both are owned by BMW",
     },
