@@ -8,7 +8,8 @@ const qBank = [
     },
     {
         id: 2,
-        image: null,
+        image: "../../qimages/BMW Logo.svg",
+        imgalt: "BMW Logo",
         question: "What does BMW stand for?",
         options: ["Bad Money Works", "Bay Motor Works", "Bayerische Motoren Werke", "Three names: Bob, Max, and Wyatt"],
         answer: "Bayerische Motoren Werke",
