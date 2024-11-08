@@ -7,7 +7,7 @@ class Question extends Component{
         const {question, selectedOption, onOptionChange, onSubmit} = this.props;
 
         return(
-            <div className="container">
+            <div className={question.image != null ? "container" : ""}>
                 <img src={question.image} alt={question.imgalt}/>
                 <div className="">
                     <h3>Question {question.id}</h3>
