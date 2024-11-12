@@ -14,6 +14,13 @@ const qBank = [
         options: ["Bad Money Works", "Bay Motor Works", "Bayerische Motoren Werke", "Three names: Bob, Max, and Wyatt"],
         answer: "Bayerische Motoren Werke",
     },
+    {
+        id: 3,
+        image: "../../qimages/MPG meter.jpg",
+        question: "What does \"MPG\" stand for?",
+        options: ["Manual Pedal Gear", "Maximum Power Gain", "Motor Power Gauge", "Miles per Gallon"],
+        answer: "Miles per Gallon",
+    },
 ]
 
 export default qBank;
