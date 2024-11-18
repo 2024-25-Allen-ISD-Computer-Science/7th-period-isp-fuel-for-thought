@@ -21,6 +21,13 @@ const qBank = [
         options: ["Manual Pedal Gear", "Maximum Power Gain", "Motor Power Gauge", "Miles per Gallon"],
         answer: "Miles per Gallon",
     },
+    {
+        id: 4,
+        
+        question: "What does \"MPH\" stand for?",
+        options: ["Manual Pedal Hearing", "Maximum Per Horse", "Must Pull Huzz", "Miles per Hour"],
+        answer: "Miles per Hour",
+    },
 ]
 
 export default qBank;
