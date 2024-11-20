@@ -22,21 +22,17 @@ class App extends Component {
         this.setState({ selectedOption: e.target.value });
     };
 
-    handleFormSubmit = (e) => {
-        e.preventDefault();
-        this.checkAnswer();
-        this.handleNextQuestion();
-    };
-
     checkAnswer = () => {
-        const { questionBank, currentQuestion, selectedOption, score } = this.state;
+        const { questionBank, currentQuestion, selectedOption } = this.state;
         if (selectedOption === questionBank[currentQuestion].answer) {
             this.setState((prevState) => ({ score: prevState.score + 1 }));
         }
     };
 
-    handleNextQuestion = () => {
+    handleNextQuestion = (e) => {
         const { questionBank, currentQuestion } = this.state;
+        e.preventDefault();
+        this.checkAnswer();
         if (currentQuestion + 1 < questionBank.length) {
             this.setState((prevState) => ({
                 currentQuestion: prevState.currentQuestion + 1,
@@ -46,6 +42,19 @@ class App extends Component {
             this.setState({
                 quizEnd: true,
             });
+        }
+    };
+
+    handlePreviousQuestion = (e) => {
+        const { currentQuestion } = this.state;
+        e.preventDefault();
+        this.checkAnswer();
+        if (currentQuestion - 1 >= 0) {
+            this.setState((prevState) => ({
+                currentQuestion: prevState.currentQuestion - 1,
+                selectedOption: "",
+                score: prevState.score - 1,
+            }));
         }
     };
 
@@ -60,7 +69,8 @@ class App extends Component {
                         question={questionBank[currentQuestion]}
                         selectedOption={selectedOption}
                         onOptionChange={this.handleOptionChange}
-                        onSubmit={this.handleFormSubmit}
+                        onSubmit={this.handleNextQuestion}
+                        onBack={this.handlePreviousQuestion}
                     />
                 ) : (
                     <Score

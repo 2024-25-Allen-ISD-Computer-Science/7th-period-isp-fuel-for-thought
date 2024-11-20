@@ -4,7 +4,7 @@ import "./Question.css";
 
 class Question extends Component{
     render() {
-        const {question, selectedOption, onOptionChange, onSubmit} = this.props;
+        const {question, selectedOption, onOptionChange, onSubmit, onBack} = this.props;
 
         return(
             <div className={question.image != null ? "container" : ""}>
@@ -12,15 +12,20 @@ class Question extends Component{
                 <div className="">
                     <h3>Question {question.id}</h3>
                     <h5 className="mt-2">{question.question}</h5>
-                    <form onSubmit={onSubmit} className="mt-2 mb-2">
+                    <form className="mt-2 mb-2">
                         <Options
                             options={question.options}
                             selectedOption={selectedOption}
                             onOptionChange={onOptionChange}
                         />
-                        <button type="submit" className="btn btn-primary mt-2">
-                            SUBMIT
-                        </button>
+                        <div className="container">
+                            <button type="back" onClick={onBack} className="btn btn-primary mt-2">
+                                BACK
+                            </button>
+                            <button type="submit" onClick={onSubmit} className="btn btn-primary mt-2">
+                                SUBMIT
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
