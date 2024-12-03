@@ -9,7 +9,7 @@ class Question extends Component{
         return(
             <div className={question.image != null ? "container" : ""}>
                 <img src={question.image} alt={question.imgalt}/>
-                <div className="">
+                <div className="old-standard-tt-regular">
                     <h3>Question {question.id}</h3>
                     <h5 className="mt-2">{question.question}</h5>
                     <form className="mt-2 mb-2">

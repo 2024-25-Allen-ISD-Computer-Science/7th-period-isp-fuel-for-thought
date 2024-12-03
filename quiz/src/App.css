@@ -37,7 +37,16 @@
   }
 }
 
-.px-8{
+.px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.app-title {
+  font-weight: bold;
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  margin-top: 3vh;
 }

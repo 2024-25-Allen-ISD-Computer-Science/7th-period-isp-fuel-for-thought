@@ -62,7 +62,7 @@ class App extends Component {
         const { questionBank, currentQuestion, selectedOption, score, quizEnd } =
             this.state;
         return (
-            <div className="App d-flex flex-column align-items-center justify-content-center bg-tan">
+            <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
                 <h1 className="app-title">Fuel for Thought</h1>
                 {!quizEnd ? (
                     <Question
