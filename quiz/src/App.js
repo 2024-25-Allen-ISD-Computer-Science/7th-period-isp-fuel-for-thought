@@ -13,8 +13,8 @@ class App extends Component {
             questionBank: qBank,
             currentQuestion: 0,
             selectedOption: "",
-            score: 0,
             quizEnd: false,
+            answers: []
         };
     }
 
@@ -22,44 +22,51 @@ class App extends Component {
         this.setState({ selectedOption: e.target.value });
     };
 
-    checkAnswer = () => {
-        const { questionBank, currentQuestion, selectedOption } = this.state;
-        if (selectedOption === questionBank[currentQuestion].answer) {
-            this.setState((prevState) => ({ score: prevState.score + 1 }));
-        }
-    };
-
     handleNextQuestion = (e) => {
-        const { questionBank, currentQuestion } = this.state;
+        const { questionBank, currentQuestion, selectedOption, answers } = this.state;
         e.preventDefault();
-        this.checkAnswer();
+
+        const updatedAnswers = [...answers];
+        updatedAnswers[currentQuestion] = selectedOption;
+
         if (currentQuestion + 1 < questionBank.length) {
-            this.setState((prevState) => ({
-                currentQuestion: prevState.currentQuestion + 1,
-                selectedOption: "",
-            }));
+            this.setState({
+                currentQuestion: currentQuestion + 1,
+                selectedOption: updatedAnswers[currentQuestion + 1] || "", // Restore previous answer if exists
+                answers: updatedAnswers,
+            });
         } else {
             this.setState({
+                answers: updatedAnswers,
                 quizEnd: true,
             });
         }
     };
 
     handlePreviousQuestion = (e) => {
-        const { currentQuestion } = this.state;
+        const { currentQuestion, answers } = this.state;
         e.preventDefault();
-        this.checkAnswer();
+
         if (currentQuestion - 1 >= 0) {
-            this.setState((prevState) => ({
-                currentQuestion: prevState.currentQuestion - 1,
-                selectedOption: "",
-                score: prevState.score - 1,
-            }));
+            this.setState({
+                currentQuestion: currentQuestion - 1,
+                selectedOption: answers[currentQuestion - 1] || "",
+            });
         }
     };
 
+    calculateScore = () => {
+        const { questionBank, answers } = this.state;
+        return answers.reduce((score, answer, index) => {
+            if (answer === questionBank[index].answer) {
+                return score + 1;
+            }
+            return score;
+        }, 0);
+    };
+
     render() {
-        const { questionBank, currentQuestion, selectedOption, score, quizEnd } =
+        const { questionBank, currentQuestion, selectedOption, quizEnd } =
             this.state;
         return (
             <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
@@ -74,7 +81,7 @@ class App extends Component {
                     />
                 ) : (
                     <Score
-                        score={score}
+                        score={this.calculateScore()}
                         onNextQuestion={this.handleNextQuestion}
                         className="score"
                     />
