@@ -68,7 +68,18 @@ class App extends Component {
     };
 
     setCategory(cat) {
-        this.setState({ category: cat })
+        const { questionBank } = this.state;
+        
+        if (cat === 0) { // All questions
+            this.setState({ 
+                category: 0, 
+            })
+        } else {
+            this.setState({ 
+                category: cat, 
+                questionBank: questionBank.filter((item) => item.category === cat)
+            })
+        }
     };
 
     render() {
