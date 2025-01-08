@@ -5,6 +5,7 @@ import Question from "./Components/Question";
 import qBank from "./Components/QuestionBank";
 import Score from "./Components/Score";
 import "./App.css";
+import Home from "./Home";
 
 class App extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ class App extends Component {
             currentQuestion: 0,
             selectedOption: "",
             quizEnd: false,
-            answers: []
+            answers: [],
+            category: null
         };
     }
 
@@ -65,29 +67,48 @@ class App extends Component {
         }, 0);
     };
 
+    setCategory(cat) {
+        this.setState({ category: cat })
+    };
+
     render() {
-        const { questionBank, currentQuestion, selectedOption, quizEnd } =
+        const { questionBank, currentQuestion, selectedOption, quizEnd, category } =
             this.state;
-        return (
-            <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
-                <h1 className="app-title">Fuel for Thought</h1>
-                {!quizEnd ? (
-                    <Question
-                        question={questionBank[currentQuestion]}
-                        selectedOption={selectedOption}
-                        onOptionChange={this.handleOptionChange}
-                        onSubmit={this.handleNextQuestion}
-                        onBack={this.handlePreviousQuestion}
+
+        if (category == null) {
+            return (
+                <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
+                    <h1 className="app-title">Fuel for Thought</h1>
+                    <Home
+                        setMotorsport={() => this.setCategory(1)}
+                        setTechnical={() => this.setCategory(2)}
+                        setBasic={() => this.setCategory(3)}
+                        setAll={() => this.setCategory(0)}
                     />
-                ) : (
-                    <Score
-                        score={this.calculateScore()}
-                        onNextQuestion={this.handleNextQuestion}
-                        className="score"
-                    />
-                )}
-            </div>
-        );
+                </div>
+            );
+        } else {
+            return (
+                <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
+                    <h1 className="app-title">Fuel for Thought</h1>
+                        {!quizEnd ? (
+                            <Question
+                                question={questionBank[currentQuestion]}
+                                selectedOption={selectedOption}
+                                onOptionChange={this.handleOptionChange}
+                                onSubmit={this.handleNextQuestion}
+                                onBack={this.handlePreviousQuestion}
+                            />
+                        ) : (
+                            <Score
+                                score={this.calculateScore()}
+                                onNextQuestion={this.handleNextQuestion}
+                                className="score"
+                            />
+                        )}
+                </div>
+            );
+        }
     }
 }
 
