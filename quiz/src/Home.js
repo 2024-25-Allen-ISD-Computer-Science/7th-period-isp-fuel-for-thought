@@ -8,22 +8,32 @@ class Home extends Component {
 
         return(
             <div className="old-standard-tt-regular">
-                <form className="mt-2 mb-2">
-                    <div className="container">
+                <div className="container">
+                    <div>
                         <button onClick={setMotorsport} className="btn btn-primary mt-2">
-                            Motorsport
+                            <img src="../../img/motorsport.jpg" alt="Motorsport Splash" class="home-img"/>
                         </button>
-                        <button onClick={setTechnical} className="btn btn-primary mt-2">
-                            Technical
-                        </button>
-                        <button onClick={setBasic} className="btn btn-primary mt-2">
-                            Basic
-                        </button>
-                        <button onClick={setAll} className="btn btn-primary mt-2">
-                            All Questions
-                        </button>
+                        <h1 className="title">Motorsport</h1>
                     </div>
-                </form>
+                    <div class="px-8">
+                        <button onClick={setTechnical} className="btn btn-primary mt-2">
+                            <img src="../../img/technical.jpeg" alt="Technical Splash" class="home-img"/>
+                        </button>
+                        <h1 className="title">Technical</h1>
+                    </div>
+                    <div class="pxr-8">
+                        <button onClick={setBasic} className="btn btn-primary mt-2">
+                            <img src="../../img/basic.jpg" alt="Basic Splash" class="home-img"/>
+                        </button>
+                        <h1 className="title">Basic</h1>
+                    </div>
+                    <div>
+                        <button onClick={setAll} className="btn btn-primary mt-2">
+                            <img src="../../img/all questions.jpeg" alt="All Questions Splash" class="home-img"/>
+                        </button>
+                        <h1 className="title">All Questions</h1>
+                    </div>
+                </div>
             </div>
         )
     }
