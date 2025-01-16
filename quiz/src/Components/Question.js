@@ -4,7 +4,7 @@ import "./Question.css";
 
 class Question extends Component{
     render() {
-        const {question, selectedOption, onOptionChange, onSubmit, onBack} = this.props;
+        const {question, selectedOption, onOptionChange, onSubmit, onBack, showBack} = this.props;
 
         return(
             <div className={question.image != null ? "container" : ""}>
@@ -19,9 +19,11 @@ class Question extends Component{
                             onOptionChange={onOptionChange}
                         />
                         <div className="container">
+                            {showBack ? (
                             <button type="back" onClick={onBack} className="btn btn-primary mt-2">
                                 BACK
                             </button>
+                            ) : (<div></div>)}
                             <button type="submit" onClick={onSubmit} className="btn btn-primary mt-2">
                                 SUBMIT
                             </button>

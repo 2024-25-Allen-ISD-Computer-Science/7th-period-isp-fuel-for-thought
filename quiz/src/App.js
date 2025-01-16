@@ -109,6 +109,7 @@ class App extends Component {
                                 onOptionChange={this.handleOptionChange}
                                 onSubmit={this.handleNextQuestion}
                                 onBack={this.handlePreviousQuestion}
+                                showBack={currentQuestion !== 0}
                             />
                         ) : (
                             <Score
