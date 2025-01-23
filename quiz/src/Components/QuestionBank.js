@@ -183,7 +183,120 @@ const qBank = [
         options: ["Automatic Braking System", "Anti-lock Braking System", "Advanced Braking Support", "Anti-slip Braking System"],
         answer: "Anti-lock Braking System",
         category: 0
-    }
+    },
+    {
+        id: 26,
+        question: "In which year was the first Formula 1 World Championship held?",
+        options: ["1946", "1950", "1955", "1960"],
+        answer: "1950",
+        category: 1
+      },
+      {
+        id: 27,
+        question: "What is the primary color of a speed limit sign?",
+        options: ["Blue", "Red", "White", "Yellow"],
+        answer: "White",
+        category: 3
+      },
+      {
+        id: 28,
+        question: "Which car company produces the Model S electric vehicle?",
+        options: ["Tesla", "Chevrolet", "BMW", "Nissan"],
+        answer: "Tesla",
+        category: 0
+      },
+      {
+        id: 29,
+        question: "What is the term for driving close behind another car to reduce wind resistance in racing?",
+        options: ["Oversteering", "Drafting", "Drifting", "Cornering"],
+        answer: "Drafting",
+        category: 1
+      },
+      {
+        id: 30,
+        question: "What component in a car converts fuel into power?",
+        options: ["Battery", "Engine", "Alternator", "Radiator"],
+        answer: "Engine",
+        category: 2
+      },
+      {
+        id: 31,
+        question: "What is the shape of a 'Yield' traffic sign?",
+        options: ["Circle", "Triangle", "Square", "Octagon"],
+        answer: "Triangle",
+        category: 3
+      },
+      {
+        id: 32,
+        question: "Which country is home to the car brand Ferrari?",
+        options: ["France", "Italy", "Germany", "USA"],
+        answer: "Italy",
+        category: 0
+      },
+      {
+        id: 33,
+        question: "What is the name of the race track that hosts the Belgian Grand Prix?",
+        options: ["Silverstone", "Monza", "Circuit de Monaco", "Spa-Francorchamps"],
+        answer: "Spa-Francorchamps",
+        category: 1
+      },
+      {
+        id: 34,
+        question: "What type of suspension system is commonly found in modern cars?",
+        options: ["Leaf Spring", "Air Suspension", "Hydraulic Suspension", "MacPherson Strut"],
+        answer: "MacPherson Strut",
+        category: 2
+      },
+      {
+        id: 35,
+        question: "What does a flashing yellow traffic light usually mean?",
+        options: ["Stop", "Proceed with caution", "Yield", "Do not enter"],
+        answer: "Proceed with caution",
+        category: 3
+      },
+      {
+        id: 36,
+        question: "What is the highest speed a Bugatti Chiron can reach?",
+        options: ["300 km/h", "350 km/h", "420 km/h", "490 km/h"],
+        answer: "490 km/h",
+        category: 0
+      },
+      {
+        id: 37,
+        question: "What is the term for a racing event that includes both right and left turns?",
+        options: ["Oval racing", "Road course", "Drag racing", "Hill climb"],
+        answer: "Road course",
+        category: 1
+      },
+      {
+        id: 38,
+        question: "What color is typically used for warning signs on roads?",
+        options: ["Green", "Yellow", "Blue", "Red"],
+        answer: "Yellow",
+        category: 3
+      },
+      {
+        id: 39,
+        question: "Which motorsport event is known as 'The Greatest Spectacle in Racing'?",
+        options: ["Le Mans 24 Hours", "Indianapolis 500", "Monaco Grand Prix", "Daytona 500"],
+        answer: "Indianapolis 500",
+        category: 1
+      },
+      {
+        id: 40,
+        question: "What does ECU stand for in a car's electrical system?",
+        options: ["Electronic Control Unit", "Engine Calibration Utility", "Energy Conversion Unit", "Electric Car Upgrade"],
+        answer: "Electronic Control Unit",
+        category: 2
+      },
+      {
+        id: 41,
+        question: "What is the typical color of lines that divide opposing lanes of traffic?",
+        options: ["White", "Yellow", "Red", "Blue"],
+        answer: "Yellow",
+        category: 3
+      }
+      
     
 ]
 
