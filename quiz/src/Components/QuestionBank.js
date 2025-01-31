@@ -295,7 +295,91 @@ const qBank = [
         options: ["White", "Yellow", "Red", "Blue"],
         answer: "Yellow",
         category: 3
-      }
+      },
+      {
+        id: 42,
+        question: "What does the 'check engine' light indicate?",
+        options: ["Fuel tank is full", "Engine needs maintenance", "Oil change needed", "Windshield wipers are low on fluid"],
+        answer: "Engine needs maintenance",
+        category: 2
+    },
+    {
+        id: 43,
+        question: "Which of the following is NOT part of a car’s electrical system?",
+        options: ["Battery", "Alternator", "Fuel injector", "Fuses"],
+        answer: "Fuel injector",
+        category: 2
+    },
+    {
+        id: 44,
+        question: "What does a car’s tachometer measure?",
+        options: ["Engine speed (RPM)", "Fuel consumption", "Vehicle speed", "Battery level"],
+        answer: "Engine speed (RPM)",
+        category: 3
+    },
+    {
+        id: 45,
+        question: "Which type of engine configuration typically provides better fuel economy?",
+        options: ["V8", "V6", "Inline 4", "Inline 6"],
+        answer: "Inline 4",
+        category: 2
+    },
+    {
+        id: 46,
+        question: "What is the main purpose of the car's radiator?",
+        options: ["To cool the engine", "To power the air conditioning", "To filter exhaust gases", "To store coolant"],
+        answer: "To cool the engine",
+        category: 2
+    },
+    {
+        id: 47,
+        question: "Which part of the car is directly responsible for transferring power from the engine to the wheels?",
+        options: ["Alternator", "Transmission", "Exhaust system", "Fuel pump"],
+        answer: "Transmission",
+        category: 2
+    },
+    {
+        id: 48,
+        question: "Which of these is a primary function of a car’s oil filter?",
+        options: ["Cool the engine", "Remove dirt and debris from the oil", "Increase fuel efficiency", "Reduce engine noise"],
+        answer: "Remove dirt and debris from the oil",
+        category: 2
+    },
+    {
+        id: 49,
+        question: "What does a hybrid car use for propulsion?",
+        options: ["Electric motor only", "Gasoline engine only", "Gasoline engine and electric motor", "Natural gas engine"],
+        answer: "Gasoline engine and electric motor",
+        category: 3
+    },
+    {
+        id: 50,
+        question: "Which system in a car is responsible for preventing skidding?",
+        options: ["Traction control", "Power steering", "Anti-lock braking system (ABS)", "Exhaust system"],
+        answer: "Traction control",
+        category: 2
+    },
+    {
+        id: 51,
+        question: "Which of these is a feature typically found in high-performance sports cars?",
+        options: ["Electric power steering", "Dual-clutch transmission", "Four-wheel drive", "Manual windows"],
+        answer: "Dual-clutch transmission",
+        category: 1
+    },
+    {
+        id: 52,
+        question: "What type of car maintenance involves replacing air, oil, or cabin filters?",
+        options: ["Fluid check", "Tire rotation", "Filter change", "Brake servicing"],
+        answer: "Filter change",
+        category: 0
+    },
+    {
+        id: 53,
+        question: "What is a primary advantage of a rear-wheel-drive car?",
+        options: ["Better traction in slippery conditions", "More fuel-efficient", "Better handling in dry conditions", "Increased interior space"],
+        answer: "Better handling in dry conditions",
+        category: 2
+    }
       
     
 ]
