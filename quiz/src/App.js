@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Question from "./Components/Question";
 import qBank from "./Components/QuestionBank";
-import Score from "./Components/Score";
+import Results from "./Results";
 import "./App.css";
 import Home from "./Home";
 
@@ -83,7 +83,7 @@ class App extends Component {
     };
 
     render() {
-        const { questionBank, currentQuestion, selectedOption, quizEnd, category } =
+        const { questionBank, currentQuestion, selectedOption, quizEnd, category, answers } =
             this.state;
 
         if (category == null) {
@@ -100,9 +100,10 @@ class App extends Component {
             );
         } else {
             return (
-                <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
-                    <h1 className="app-title">Fuel for Thought</h1>
-                        {!quizEnd ? (
+                <div>
+                    {!quizEnd ? (
+                        <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
+                            <h1 className="app-title">Fuel for Thought</h1>
                             <Question
                                 question={questionBank[currentQuestion]}
                                 selectedOption={selectedOption}
@@ -111,13 +112,16 @@ class App extends Component {
                                 onBack={this.handlePreviousQuestion}
                                 showBack={currentQuestion !== 0}
                             />
-                        ) : (
-                            <Score
+                        </div>
+                    ) : (
+                        <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
+                            <Results
+                                questionBank={questionBank}
+                                answers={answers}
                                 score={this.calculateScore()}
-                                onNextQuestion={this.handleNextQuestion}
-                                className="score"
                             />
-                        )}
+                        </div>
+                    )}
                 </div>
             );
         }

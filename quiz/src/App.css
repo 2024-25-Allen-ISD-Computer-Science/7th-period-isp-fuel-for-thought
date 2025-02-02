@@ -1,3 +1,7 @@
+li {
+  list-style-type: none
+}
+
 .App {
   text-align: center;
 }
@@ -44,6 +48,16 @@
   position: fixed;
   top: 0;
   margin-top: 3vh;
+}
+
+.results-container {
+  max-width: 90vw;
+  overflow: scroll;
+}
+
+.results-title {
+  font-weight: 900;
+  font-size: 60px;
 }
 
 .title {
