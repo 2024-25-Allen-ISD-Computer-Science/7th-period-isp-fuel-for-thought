@@ -379,7 +379,92 @@ const qBank = [
         options: ["Better traction in slippery conditions", "More fuel-efficient", "Better handling in dry conditions", "Increased interior space"],
         answer: "Better handling in dry conditions",
         category: 2
-    }
+    },
+    {
+        id: 54,
+        question: "What does the term 'understeer' refer to in vehicle handling?",
+        options: ["When the car turns too much", "When the car turns too little", "When the car loses traction on the rear wheels", "When the car is too light"],
+        answer: "When the car turns too little",
+        category: 2
+      },
+      {
+        id: 55,
+        question: "Which manufacturer is responsible for the car model, the 'Taurus'?",
+        options: ["Toyota", "Honda", "Ford", "Nissan"],
+        answer: "Ford",
+        category: 0
+      },
+      {
+        id: 56,
+        question: "What is the function of a car's timing belt?",
+        options: ["Regulates the exhaust system", "Keeps the engine cool", "Synchronizes the movement of the engine’s valves and pistons", "Increases engine performance"],
+        answer: "Synchronizes the movement of the engine’s valves and pistons",
+        category: 2
+      },
+      {
+        id: 57,
+        question: "Which of the following is a common layout for a car's engine?",
+        options: ["Rear-engine, rear-wheel drive", "Front-engine, all-wheel drive", "Mid-engine, rear-wheel drive", "Rear-engine, front-wheel drive"],
+        answer: "Front-engine, all-wheel drive",
+        category: 2
+      },
+      {
+        id: 58,
+        question: "Which car manufacturer produces the '911' sports car?",
+        options: ["BMW", "Porsche", "Ferrari", "Lamborghini"],
+        answer: "Porsche",
+        category: 3
+      },
+      {
+        id: 59,
+        question: "In what type of racing is the 'Le Mans 24 Hours' event held?",
+        options: ["Formula 1", "Endurance racing", "IndyCar", "Stock car racing"],
+        answer: "Endurance racing",
+        category: 1
+      },
+      {
+        id: 60,
+        question: "What year did the first electric car, the Chevrolet Volt, get released?",
+        options: ["2007", "2011", "2012", "2015"],
+        answer: "2011",
+        category: 0
+      },
+      {
+        id: 61,
+        question: "What is the primary advantage of all-wheel drive (AWD) in a vehicle?",
+        options: ["Improved fuel economy", "Enhanced towing capacity", "Better traction on slippery surfaces", "Higher top speed"],
+        answer: "Better traction on slippery surfaces",
+        category: 2
+      },
+      {
+        id: 62,
+        question: "Which of these car brands is famous for its 'M' performance models?",
+        options: ["Audi", "BMW", "Mercedes-Benz", "Lexus"],
+        answer: "BMW",
+        category: 3
+      },
+      {
+        id: 63,
+        question: "Which car component is primarily responsible for stopping the vehicle?",
+        options: ["Alternator", "Exhaust system", "Brakes", "Battery"],
+        answer: "Brakes",
+        category: 2
+      },
+      {
+        id: 64,
+        question: "Which race track is known as the 'Ring' and is a popular venue for performance car testing?",
+        options: ["Monaco Circuit", "Silverstone", "Nürburgring", "Circuit de Spa-Francorchamps"],
+        answer: "Nürburgring",
+        category: 1
+      },
+      {
+        id: 65,
+        question: "What car brand is associated with the luxury sedan model 'S-Class'?",
+        options: ["Audi", "BMW", "Mercedes-Benz", "Lexus"],
+        answer: "Mercedes-Benz",
+        category: 3
+      }
+      
       
     
 ]
