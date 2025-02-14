@@ -463,7 +463,113 @@ const qBank = [
         options: ["Audi", "BMW", "Mercedes-Benz", "Lexus"],
         answer: "Mercedes-Benz",
         category: 3
+      },
+      {
+        id: 66,
+        question: "Which country is home to the car manufacturer Volvo?",
+        options: ["Germany", "Sweden", "USA", "Japan"],
+        answer: "Sweden",
+        category: 0
+      },
+      {
+        id: 67,
+        question: "Which racing series uses the term 'Green-White-Checkered' for its overtime finish?",
+        options: ["Formula 1", "NASCAR", "IndyCar", "WEC"],
+        answer: "NASCAR",
+        category: 1
+      },
+      {
+        id: 68,
+        question: "What does the 'compression ratio' in an engine refer to?",
+        options: ["The ratio of fuel to air in the engine", "The ratio of the cylinder volume before and after compression", "The pressure of the fuel injection system", "The speed at which the engine compresses air"],
+        answer: "The ratio of the cylinder volume before and after compression",
+        category: 2
+      },
+      {
+        id: 69,
+        question: "Which car manufacturer produces the Camry?",
+        options: ["Honda", "Nissan", "Toyota", "Ford"],
+        answer: "Toyota",
+        category: 3
+      },
+      {
+        id: 70,
+        question: "What was the first mass-produced car?",
+        options: ["Ford Model T", "Volkswagen Beetle", "Chevrolet Bel Air", "Mercedes-Benz 300SL"],
+        answer: "Ford Model T",
+        category: 0
+      },
+      {
+        id: 71,
+        question: "Which F1 team holds the record for the most consecutive Constructors' Championships?",
+        options: ["Ferrari", "Red Bull", "Mercedes", "McLaren"],
+        answer: "Mercedes",
+        category: 1
+      },
+      {
+        id: 72,
+        question: "What does a limited-slip differential do?",
+        options: ["Prevents wheel lock-up under braking", "Improves traction by limiting wheel spin", "Reduces engine temperature", "Increases fuel efficiency"],
+        answer: "Improves traction by limiting wheel spin",
+        category: 2
+      },
+      {
+        id: 73,
+        question: "Which car brand uses four interlocking rings as its logo?",
+        options: ["BMW", "Audi", "Mercedes-Benz", "Volkswagen"],
+        answer: "Audi",
+        category: 3
+      },
+      {
+        id: 74,
+        question: "What does the 'H' in H-pattern shifter stand for?",
+        options: ["Hydraulic", "Horizontal", "High-performance", "It doesn't stand for anything"],
+        answer: "It doesn't stand for anything",
+        category: 0
+      },
+      {
+        id: 75,
+        question: "Which racing series features the 'Bathurst 1000'?",
+        options: ["NASCAR", "Supercars Championship", "Formula 1", "WRC"],
+        answer: "Supercars Championship",
+        category: 1
+      },
+      {
+        id: 76,
+        question: "What is the primary function of an intercooler in a turbocharged engine?",
+        options: ["Increase fuel efficiency", "Reduce intake air temperature", "Boost oil circulation", "Control emissions"],
+        answer: "Reduce intake air temperature",
+        category: 2
+      },
+      {
+        id: 77,
+        question: "Which car model is often credited with starting the 'muscle car' era?",
+        options: ["Chevrolet Camaro", "Pontiac GTO", "Dodge Charger", "Ford Mustang"],
+        answer: "Pontiac GTO",
+        category: 3
+      },
+      {
+        id: 78,
+        question: "Which company developed the first practical airbag system for passenger cars?",
+        options: ["Mercedes-Benz", "Ford", "Volvo", "General Motors"],
+        answer: "Mercedes-Benz",
+        category: 0
+      },
+      {
+        id: 79,
+        question: "Which legendary F1 driver was known as 'The Professor'?",
+        options: ["Ayrton Senna", "Michael Schumacher", "Alain Prost", "Niki Lauda"],
+        answer: "Alain Prost",
+        category: 1
+      },
+      {
+        id: 80,
+        question: "What does a car's ECU control?",
+        options: ["The air conditioning system", "The engine’s performance and efficiency", "The audio and infotainment system", "The suspension system"],
+        answer: "The engine’s performance and efficiency",
+        category: 2
       }
+      
       
       
     
