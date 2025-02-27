@@ -4,8 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Question from "./Components/Question";
 import qBank from "./Components/QuestionBank";
 import Results from "./Results";
-import "./App.css";
 import Home from "./Home";
+import Stats from "./Stats";
+import "./App.css";
 
 class App extends Component {
     constructor(props) {
@@ -16,7 +17,8 @@ class App extends Component {
             selectedOption: "",
             quizEnd: false,
             answers: [],
-            category: null
+            category: null,
+            statsPage: false,
         };
     }
 
@@ -59,12 +61,21 @@ class App extends Component {
 
     calculateScore = () => {
         const { questionBank, answers } = this.state;
-        return answers.reduce((score, answer, index) => {
+        const finalScore = answers.reduce((score, answer, index) => {
             if (answer === questionBank[index].answer) {
                 return score + 1;
             }
             return score;
         }, 0);
+
+        let oldTotalWrong = Number(localStorage.getItem("totalWrong")) ?? 0
+        let oldTotalRight = Number(localStorage.getItem("totalRight")) ?? 0
+        oldTotalWrong += (questionBank.length - finalScore)
+        oldTotalRight += finalScore
+        localStorage.setItem("totalWrong", String(oldTotalWrong))
+        localStorage.setItem("totalRight", String(oldTotalRight))
+
+        return finalScore
     };
 
     setCategory(cat) {
@@ -82,20 +93,34 @@ class App extends Component {
         }
     };
 
+    toggleStats() {
+        const { statsPage } = this.state;
+        this.setState({ statsPage: !statsPage })
+    };
+
     render() {
-        const { questionBank, currentQuestion, selectedOption, quizEnd, category, answers } =
+        const { questionBank, currentQuestion, selectedOption, quizEnd, category, answers, statsPage } =
             this.state;
 
         if (category == null) {
             return (
-                <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
-                    <h1 className="app-title">Fuel for Thought</h1>
-                    <Home
-                        setMotorsport={() => this.setCategory(1)}
-                        setTechnical={() => this.setCategory(2)}
-                        setBasic={() => this.setCategory(3)}
-                        setAll={() => this.setCategory(0)}
-                    />
+                <div>
+                    {statsPage ? (
+                        <Stats/>
+                    ) : (
+                        <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
+                            <div className="container pyb-8">
+                                <h1 className="app-title">Fuel for Thought</h1>
+                            </div>
+                            <Home
+                                setMotorsport={() => this.setCategory(1)}
+                                setTechnical={() => this.setCategory(2)}
+                                setBasic={() => this.setCategory(3)}
+                                setAll={() => this.setCategory(0)}
+                            />
+                            <button className="btn btn-primary" onClick={() => this.toggleStats()}>Stats</button>
+                        </div>
+                    )}
                 </div>
             );
         } else {
