@@ -11,25 +11,25 @@ class Home extends Component {
                 <div className="container">
                     <div>
                         <button onClick={setMotorsport} className="btn btn-primary mt-2">
-                            <img src="../../img/motorsport.jpg" alt="Motorsport Splash" class="home-img"/>
+                            <img src="../../img/two-motor-flags.png" alt="Motorsport Splash" class="home-img"/>
                         </button>
                         <h1 className="title">Motorsport</h1>
                     </div>
                     <div>
                         <button onClick={setTechnical} className="btn btn-primary mt-2">
-                            <img src="../../img/technical.jpeg" alt="Technical Splash" class="home-img"/>
+                            <img src="../../img/mechanics.png" alt="Technical Splash" class="home-img"/>
                         </button>
                         <h1 className="title">Technical</h1>
                     </div>
                     <div>
                         <button onClick={setBasic} className="btn btn-primary mt-2">
-                            <img src="../../img/basic.jpg" alt="Basic Splash" class="home-img"/>
+                            <img src="../../img/car.png" alt="Basic Splash" class="home-img"/>
                         </button>
                         <h1 className="title">Basic</h1>
                     </div>
                     <div>
                         <button onClick={setAll} className="btn btn-primary mt-2">
-                            <img src="../../img/all questions.jpeg" alt="All Questions Splash" class="home-img"/>
+                            <img src="../../img/all.png" alt="All Questions Splash" class="home-img"/>
                         </button>
                         <h1 className="title">All Questions</h1>
                     </div>

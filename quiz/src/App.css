@@ -67,10 +67,10 @@ li {
 }
 
 .home-img {
-  height: 40vw;
-  width: 20vw;
+  height: 30vw;
+  width: 18vw;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .center {
