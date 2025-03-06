@@ -18,7 +18,7 @@ body::after {
   display: block;
   width: 100%;
   height: 15px;
-  background-color: #26a69a;
+  background-color: #002e6bcd;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -27,7 +27,7 @@ body::after {
 
 .bg-tan {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 251 240 / var(--tw-bg-opacity));
+  background-color: rgb(202 232 243 / var(--tw-bg-opacity));
   /* Make the element cover the entire viewport */
   min-height: 100vh; /* Full height of the viewport */
   width: 100vw; /* Full width of the viewport */
