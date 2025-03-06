@@ -15,13 +15,13 @@ class Home extends Component {
                         </button>
                         <h1 className="title">Motorsport</h1>
                     </div>
-                    <div class="px-8">
+                    <div>
                         <button onClick={setTechnical} className="btn btn-primary mt-2">
                             <img src="../../img/technical.jpeg" alt="Technical Splash" class="home-img"/>
                         </button>
                         <h1 className="title">Technical</h1>
                     </div>
-                    <div class="pxr-8">
+                    <div>
                         <button onClick={setBasic} className="btn btn-primary mt-2">
                             <img src="../../img/basic.jpg" alt="Basic Splash" class="home-img"/>
                         </button>

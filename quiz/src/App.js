@@ -106,19 +106,27 @@ class App extends Component {
             return (
                 <div>
                     {statsPage ? (
-                        <Stats/>
+                        <Stats
+                            isPresented={() => this.toggleStats()}
+                        />
                     ) : (
-                        <div className="old-standard-tt-bold d-flex flex-column align-items-center justify-content-center bg-tan">
-                            <div className="container pyb-8">
-                                <h1 className="app-title">Fuel for Thought</h1>
+                        <div className="old-standard-tt-bold bg-tan">
+                            <div className="pyb-8">
+                                <div className="pxl-8 pyt-4">
+                                    <button className="btn btn-primary" onClick={() => this.toggleStats()}>Stats</button>
+                                </div>
+                                <div className="container">
+                                    <h1 className="app-title">Fuel for Thought</h1>
+                                </div>
                             </div>
-                            <Home
-                                setMotorsport={() => this.setCategory(1)}
-                                setTechnical={() => this.setCategory(2)}
-                                setBasic={() => this.setCategory(3)}
-                                setAll={() => this.setCategory(0)}
-                            />
-                            <button className="btn btn-primary" onClick={() => this.toggleStats()}>Stats</button>
+                            <div className="align-items-center justify-content-center">
+                                <Home
+                                    setMotorsport={() => this.setCategory(1)}
+                                    setTechnical={() => this.setCategory(2)}
+                                    setBasic={() => this.setCategory(3)}
+                                    setAll={() => this.setCategory(0)}
+                                />
+                            </div>
                         </div>
                     )}
                 </div>

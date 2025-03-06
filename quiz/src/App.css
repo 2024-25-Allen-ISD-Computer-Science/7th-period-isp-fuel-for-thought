@@ -77,6 +77,13 @@ li {
   text-align: center;
 }
 
+.p-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -88,6 +95,10 @@ li {
 
 .pxr-8 {
   padding-right: 2rem;
+}
+
+.pyt-4 {
+  padding-top: 1rem;
 }
 
 .pyb-8 {
