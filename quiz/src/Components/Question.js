@@ -4,13 +4,15 @@ import "./Question.css";
 
 class Question extends Component{
     render() {
-        const {question, selectedOption, onOptionChange, onSubmit, onBack, showBack} = this.props;
+        const {question, selectedOption, onOptionChange, onSubmit, onBack, showBack, qnum} = this.props;
 
         return(
             <div className={question.image != null ? "container" : ""}>
-                <img src={question.image} alt={question.imgalt}/>
+                <div className="qimg-frame px-8">
+                    <img src={question.image} alt={question.imgalt}/>
+                </div>
                 <div className="old-standard-tt-regular">
-                    <h3>Question {question.id}</h3>
+                    <h3>Question {qnum}</h3>
                     <h5 className="mt-2">{question.question}</h5>
                     <form className="mt-2 mb-2">
                         <Options

@@ -19,6 +19,7 @@ class App extends Component {
             answers: [],
             category: null,
             statsPage: false,
+            questionNumberUI: 1,
         };
     }
 
@@ -27,7 +28,7 @@ class App extends Component {
     };
 
     handleNextQuestion = (e) => {
-        const { questionBank, currentQuestion, selectedOption, answers } = this.state;
+        const { questionBank, currentQuestion, selectedOption, answers, questionNumberUI } = this.state;
         e.preventDefault();
 
         const updatedAnswers = [...answers];
@@ -45,16 +46,19 @@ class App extends Component {
                 quizEnd: true,
             });
         }
+
+        this.setState({  questionNumberUI: questionNumberUI + 1, })
     };
 
     handlePreviousQuestion = (e) => {
-        const { currentQuestion, answers } = this.state;
+        const { currentQuestion, answers, questionNumberUI } = this.state;
         e.preventDefault();
 
         if (currentQuestion - 1 >= 0) {
             this.setState({
                 currentQuestion: currentQuestion - 1,
                 selectedOption: answers[currentQuestion - 1] || "",
+                questionNumberUI: questionNumberUI - 1,
             });
         }
     };
@@ -99,7 +103,7 @@ class App extends Component {
     };
 
     render() {
-        const { questionBank, currentQuestion, selectedOption, quizEnd, category, answers, statsPage } =
+        const { questionBank, currentQuestion, selectedOption, quizEnd, category, answers, statsPage, questionNumberUI } =
             this.state;
 
         if (category == null) {
@@ -144,6 +148,7 @@ class App extends Component {
                                 onSubmit={this.handleNextQuestion}
                                 onBack={this.handlePreviousQuestion}
                                 showBack={currentQuestion !== 0}
+                                qnum={questionNumberUI}
                             />
                         </div>
                     ) : (
