@@ -7,7 +7,8 @@
 const qBank = [
     {
         id: 1,
-        image: null,
+        image: "../../qimages/rolls_cooper.webp",
+        imgalt: "rolls_cooper",
         question: "What do Rolls-Royce and MINI Coop have in common?",
         options: ["Both are owned by BMW", "Both are luxury brands", "Both are Japanese", "They have nothing in common"],
         answer: "Both are owned by BMW",
@@ -32,6 +33,8 @@ const qBank = [
     },
     {
         id: 4,
+        image: "../../qimages/speedometer.jpg",
+        imgalt: "speedometer",
         question: "What does \"MPH\" stand for?",
         options: ["Manual Pedal Hearing", "Maximum Per Horse", "Must Pull Huzz", "Miles per Hour"],
         answer: "Miles per Hour",
@@ -39,6 +42,8 @@ const qBank = [
     },
     {
         id: 5,
+        image: "../../qimages/nascar.jpg",
+        imgalt: "nascar",
         question: "What racing series is known as 'The Great American Race'?",
         options: ["Formula 1", "IndyCar", "Le Mans", "NASCAR"],
         answer: "NASCAR",
@@ -46,6 +51,8 @@ const qBank = [
     },
     {
         id: 6,
+        image: "../../qimages/fia.png",
+        imgalt: "fia",
         question: "What does 'FIA' stand for in motorsport?",
         options: ["Federation of International Automobiles", "Formula International Alliance", "Fédération Internationale de l'Automobile", "Fast International Autosport"],
         answer: "Fédération Internationale de l'Automobile",
@@ -53,6 +60,8 @@ const qBank = [
     },
     {
         id: 7,
+        image: "../../qimages/rosberg.webp",
+        imgalt: "rosberg",
         question: "Which Formula 1 driver is known for his rivalry at Mercedes with Lewis Hamilton during the 2010s?",
         options: ["Sebastian Vettel", "Fernando Alonso", "Daniel Ricciardo", "Nico Rosberg"],
         answer: "Nico Rosberg",
@@ -60,6 +69,8 @@ const qBank = [
     },
     {
         id: 8,
+        image: "../../qimages/le_mans.webp",
+        imgalt: "le_mans",
         question: "What is the name of the prestigious 24-hour endurance race held in France?",
         options: ["Daytona 500", "Monaco Grand Prix", "Le Mans", "Spa-Francorchamps"],
         answer: "Le Mans",
@@ -67,6 +78,8 @@ const qBank = [
     },
     {
         id: 9,
+        image: "../../qimages/f1_constructors.avif",
+        imgalt: "f1_constructors",
         question: "Which team won the most Constructors' Championships in Formula 1 history?",
         options: ["Ferrari", "McLaren", "Mercedes", "Red Bull"],
         answer: "Ferrari",
@@ -74,6 +87,8 @@ const qBank = [
     },
     {
         id: 10,
+        image: "../../qimages/cc.jpg",
+        imgalt: "cc",
         question: "What component of a car helps reduce exhaust emissions?",
         options: ["Catalytic Converter", "Alternator", "Starter Motor", "Radiator"],
         answer: "Catalytic Converter",
@@ -81,6 +96,8 @@ const qBank = [
     },
     {
         id: 11,
+        image: "../../qimages/alternator.webp",
+        imgalt: "alternator",
         question: "What is the purpose of a car's alternator?",
         options: ["Start the engine", "Charge the battery", "Cool the engine", "Boost acceleration"],
         answer: "Charge the battery",
@@ -88,6 +105,8 @@ const qBank = [
     },
     {
         id: 12,
+        image: "../../qimages/v8.webp",
+        imgalt: "v8",
         question: "What type of engine layout is referred to as 'V8'?",
         options: ["An engine with 8 valves", "A 4-cylinder engine in V formation", "An engine with 8 cylinders arranged in two banks", "An electric motor with 8 rotors"],
         answer: "An engine with 8 cylinders arranged in two banks",
@@ -95,6 +114,8 @@ const qBank = [
     },
     {
         id: 13,
+        image: "../../qimages/rpm_meter.jpg",
+        imgalt: "rpm_meter",
         question: "What does 'RPM' stand for in relation to engines?",
         options: ["Revolutions Per Minute", "Rotations Per Meter", "Rapid Power Movement", "Rate of Performance Measurement"],
         answer: "Revolutions Per Minute",
@@ -102,6 +123,8 @@ const qBank = [
     },
     {
         id: 14,
+        image: "../../qimages/turbocharger.jpg",
+        imgalt: "turbocharger",
         question: "What does a turbocharger do in an engine?",
         options: ["Increases fuel efficiency", "Forces more air into the engine for extra power", "Reduces emissions", "Cools the engine"],
         answer: "Forces more air into the engine for extra power",
@@ -109,6 +132,8 @@ const qBank = [
     },
     {
         id: 15,
+        image: "../../qimages/differential.webp",
+        imgalt: "differential",
         question: "What is the primary function of a differential in a car?",
         options: ["Distribute torque to the wheels", "Improve braking efficiency", "Stabilize the suspension", "Enhance fuel economy"],
         answer: "Distribute torque to the wheels",
@@ -116,6 +141,8 @@ const qBank = [
     },
     {
         id: 16,
+        image: "../../qimages/toyota.jpg",
+        imgalt: "toyota",
         question: "What is the logo of Toyota shaped like?",
         options: ["A circle", "Three overlapping ovals", "A single 'T' shape", "A star"],
         answer: "Three overlapping ovals",
@@ -123,6 +150,8 @@ const qBank = [
     },
     {
         id: 17,
+        image: "../../qimages/mercedes.png",
+        imgalt: "mercedes",
         question: "Which car brand is known for its luxury and features the logo of a silver star?",
         options: ["BMW", "Mercedes-Benz", "Audi", "Lexus"],
         answer: "Mercedes-Benz",
@@ -130,6 +159,8 @@ const qBank = [
     },
     {
         id: 18,
+        image: "../../qimages/civic.jpg",
+        imgalt: "civic",
         question: "Which company manufactures the Civic?",
         options: ["Toyota", "Nissan", "Honda", "Mazda"],
         answer: "Honda",
@@ -137,6 +168,8 @@ const qBank = [
     },
     {
         id: 19,
+        image: "../../qimages/beetle.jpg",
+        imgalt: "beetle",
         question: "Which car company is famous for the Beetle model?",
         options: ["Fiat", "Volkswagen", "Chevrolet", "Mini"],
         answer: "Volkswagen",
@@ -144,6 +177,8 @@ const qBank = [
     },
     {
         id: 20,
+        image: "../../qimages/coupe.webp",
+        imgalt: "coupe",
         question: "What type of vehicle is a 'coupe'?",
         options: ["A car with two doors", "A car with a convertible roof", "A car with off-road capabilities", "A car designed for racing"],
         answer: "A car with two doors",
@@ -151,6 +186,8 @@ const qBank = [
     },
     {
         id: 21,
+        image: "../../qimages/sweden.webp",
+        imgalt: "sweden",
         question: "Which country is known as the birthplace of Volvo?",
         options: ["Germany", "Sweden", "USA", "Japan"],
         answer: "Sweden",
@@ -158,6 +195,8 @@ const qBank = [
     },
     {
         id: 22,
+        image: "../../qimages/hybrid2.jpg",
+        imgalt: "hybrid2",
         question: "What is the term for a car that can switch between gasoline and electric power?",
         options: ["Electric car", "Hybrid car", "Hydrogen car", "Solar car"],
         answer: "Hybrid car",
@@ -165,6 +204,8 @@ const qBank = [
     },
     {
         id: 23,
+        image: "../../qimages/stop_sign.webp",
+        imgalt: "stop_sign",
         question: "What is the typical shape of a stop sign?",
         options: ["Circle", "Triangle", "Octagon", "Square"],
         answer: "Octagon",
@@ -172,6 +213,8 @@ const qBank = [
     },
     {
         id: 24,
+        image: "../../qimages/cruise_control.jpg",
+        imgalt: "cruise_control",
         question: "What is the name of the feature that allows a car to maintain a constant speed without the driver pressing the accelerator?",
         options: ["Lane assist", "Cruise control", "Auto steer", "Speed limiter"],
         answer: "Cruise control",
@@ -179,6 +222,8 @@ const qBank = [
     },
     {
         id: 25,
+        image: "../../qimages/car_brakes.jpg",
+        imgalt: "car_brakes",
         question: "What does ABS stand for in car safety systems?",
         options: ["Automatic Braking System", "Anti-lock Braking System", "Advanced Braking Support", "Anti-slip Braking System"],
         answer: "Anti-lock Braking System",
@@ -186,6 +231,8 @@ const qBank = [
     },
     {
         id: 26,
+        image: "../../qimages/old_f1.jpg",
+        imgalt: "old_f1",
         question: "In which year was the first Formula 1 World Championship held?",
         options: ["1946", "1950", "1955", "1960"],
         answer: "1950",
@@ -193,6 +240,8 @@ const qBank = [
       },
       {
         id: 27,
+        image: "../../qimages/speed.webp",
+        imgalt: "speed",
         question: "What is the primary color of a speed limit sign?",
         options: ["Blue", "Red", "White", "Yellow"],
         answer: "White",
