@@ -16,7 +16,12 @@ class Options extends Component {
                             onChange={onOptionChange}
                             className="form-check-input"
                         />
-                        <label className="form-check-label">{option}</label>
+                        <label
+                            className="form-check-label"
+                            onClick={() => onOptionChange({ target: { value: option } })}
+                        >
+                            {option}
+                        </label>
                     </div>
                 ))}
             </div>
